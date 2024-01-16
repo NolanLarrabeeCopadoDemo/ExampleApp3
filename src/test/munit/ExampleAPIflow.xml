@@ -23,7 +23,7 @@
             <http:request config-ref="httpRequestConfig_API1" path="/api1" method="GET"/>
         </munit:execution>
 
-        <munit:assert-that expression="#[payload]" is="API 1 Response"/>
+        <munit:assert-that expression="#[payload]" is="API 1 Expected Response"/>
     </munit:test>
 
     <!-- Test Suite for API 2 -->
@@ -38,7 +38,7 @@
             <http:request config-ref="httpRequestConfig_API2" path="/api2" method="GET"/>
         </munit:execution>
 
-        <munit:assert-that expression="#[payload]" is="API 2 Response"/>
+        <munit:assert-that expression="#[payload]" is="API 2 Expected Response"/>
     </munit:test>
 
 </mule>

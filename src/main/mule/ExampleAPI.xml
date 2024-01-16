@@ -16,14 +16,14 @@
     <http:listener-config name="HTTP_Listener_Configuration_API1" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration"/>
     <flow name="api1Flow">
         <http:listener config-ref="HTTP_Listener_Configuration_API1" path="/api1" allowedMethods="GET"/>
-        <set-payload value="API 1 Response"/>
+        <set-payload value="API 1 Expected Response"/>
     </flow>
 
     <!-- API 2 Configuration -->
     <http:listener-config name="HTTP_Listener_Configuration_API2" host="0.0.0.0" port="8082" doc:name="HTTP Listener Configuration"/>
     <flow name="api2Flow">
         <http:listener config-ref="HTTP_Listener_Configuration_API2" path="/api2" allowedMethods="GET"/>
-        <set-payload value="API 2 Response"/>
+        <set-payload value="API 2 Expected Response"/>
     </flow>
 
 </mule>
